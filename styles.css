@@ -1,0 +1,400 @@
+body{
+    margin : 0px;
+    background:black;
+    background-image: linear-gradient(rgba(0,0,0, 1) 0%,rgba(0,0,0, 0) 10%) ,url(images/217654-cloud-landscape-nature-and-ambient-hd.jpg);
+    
+}
+
+
+
+.container{
+    display:grid;
+    grid-template-columns: 1fr;
+    
+    background-image:  linear-gradient(  rgba(0,0,0, 0) 0%,rgba(0,0,0, 1) 100%), url(images/1.jpg);
+    background-size: cover;
+    background-attachment: scroll;
+
+
+}
+
+.nav-bar 
+{
+    display: flex;
+flex-grow: 1;
+justify-content: space-between;
+padding: 38px;
+/*transform: translateY(-70%);*/
+transition: 0.5s;
+}
+
+.left-side
+{
+    display: flex;
+    
+}
+
+
+.nav-bar >.left-side > div
+{
+    margin-right: 20px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+    
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid rgb(219, 205, 205);
+}
+
+.nav-link-wrapper a:hover {
+    color:  rgb(219, 205, 205);
+}
+
+.brand {
+    font-size: 2rem;
+    color: wheat;
+    margin-right:3rem;
+}
+
+.container :hover .fa
+{
+    
+    transform: translateY(0%);
+    
+}
+
+.logo1 :hover
+{
+    border: 1px solid rgb(255, 0, 0);
+}
+
+.logo2 :hover
+{
+    border: 1px solid rgb(136, 255, 0);
+}
+
+.logo3 :hover
+{
+    border: 1px solid rgb(0, 17, 255);
+}
+
+.logo4 :hover
+{
+    border: 1px solid rgb(0, 255, 21);
+}
+
+.logos {
+    display: flex;
+    margin-left: 40rem;
+}
+
+.fa {
+    /*
+    text-align: center;
+    font-size: 5 rem;
+    width: 28px;
+    height: 28px;
+    float: left;
+    transform: translateY(-200%);
+    border: 1px solid rgba(204, 204, 204, 0);
+    border-radius: 34px;
+    margin: 0 10px 10px 0;
+    padding: 6px;
+    */
+    transition: 0.5s;
+    background: #3B5998;
+    color: white;
+
+
+    padding: 10px;
+    font-size: 30px;
+    
+    text-align: center;
+    text-decoration: none;
+    width: 18px;
+    height: 18px;
+    float: left;
+    transform: translateY(-200%);
+    border: 1px solid rgba(204, 204, 204, 0);
+    border-radius: 34px;
+    margin: 0 10px 10px 0;
+}
+
+
+.collapse {
+    flex-grow: 0.001;
+}
+
+
+/* main page */
+
+.main-menu {
+    
+    
+    position: static; /* Фиксированное положение */
+  /*  right: 75%; /* Расстояние от правого края окна браузера */
+    height: 100%;
+    width: 25%;
+    z-index: 1;
+    padding-top: 20px;
+    overflow-x: hidden;
+    padding: 10px; /* Поля вокруг текста */ 
+    color: rgb(212, 158, 243);
+    background: rgba(0, 0, 0, 0); /* Цвет фона */ 
+    padding-bottom: 200px;
+    /*border: 1px solid #333; /* Параметры рамки */ 
+}
+
+.aside#aside1 {
+    width:25%;
+}
+
+
+
+
+.menu-label {
+    font-size: 1.5rem;
+    color:whitesmoke;
+}
+
+.menu-options {
+    
+    margin-left: 2rem;
+   
+}
+
+/* кнопка меню 1 */
+.dropdown-child1 {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+}
+.dropdown-child1 a {
+    color: black;
+    padding: 12px 16px;
+    text-transform: none;
+    display: block;
+}
+
+#child-1 a {
+    color: black;
+    text-transform: none;
+}
+
+.btn1 
+{
+    position: relative;
+    display: inline-block;
+  
+}
+.btn1 a 
+{
+    text-transform: uppercase;
+    color: black;
+    transition: 0.5s;
+}
+
+
+.btn1:hover .dropdown-child1 {
+    display: block;
+}
+
+.dropdown-child1 a:hover {background-color: #ddd;}
+
+
+
+.btn1:hover {
+    border-bottom: 1px solid rgb(219, 205, 205);
+}
+
+.btn1 a:hover {
+    color:  rgb(219, 205, 205);
+}
+
+/* кнопка меню 2 */
+
+.dropdown-child2 {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+}
+.dropdown-child2 a {
+    color: black;
+    padding: 12px 16px;
+    text-transform: none;
+    display: block;
+}
+
+#child-2 a {
+    color: black;
+    text-transform: none;
+}
+
+.btn2
+{
+    position: relative;
+    display: inline-block;
+   
+   
+    
+    transition: 0.5s;
+}
+.btn2 a 
+{
+    text-transform: uppercase;
+    color: black;
+    transition: 0.5s;
+}
+
+
+.btn2:hover .dropdown-child2 {
+    display: block;
+}
+
+.dropdown-child2 a:hover {background-color: #ddd;}
+
+
+.btn2:hover {
+    border-bottom: 1px solid rgb(219, 205, 205);
+}
+
+.btn2 a:hover {
+    color:  rgb(219, 205, 205);
+}
+
+
+/* кнопка меню 3 */
+
+.dropdown-child3 {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+}
+.dropdown-child3 a {
+    color: black;
+    padding: 12px 16px;
+    text-transform: none;
+    display: block;
+}
+
+#child-3 a {
+    color: black;
+    text-transform: none;
+}
+
+.btn3
+{
+    position: relative;
+    display: inline-block;
+   
+   
+    
+    transition: 0.5s;
+}
+.btn3 a 
+{
+    text-transform: uppercase;
+    color: black;
+}
+
+
+.btn3:hover .dropdown-child3 {
+    display: block;
+}
+
+.dropdown-child3 a:hover {background-color: #ddd;}
+
+.btn3:hover {
+    border-bottom: 1px solid rgb(219, 205, 205);
+}
+
+.btn3 a:hover {
+    color:  rgb(219, 205, 205);
+    transition: 0.5s;
+}
+
+.btn4{
+    position: relative;
+    display: inline-block;
+   
+   
+    
+    transition: 0.5s;
+}
+.btn4 a 
+{
+    text-transform: uppercase;
+    color: #8a8a8a;
+}
+
+
+
+/* материал страницы */
+.main {
+    display:flex;
+    margin-left: 26.5%;
+     padding-left: 2rem;
+     background:rgba(0, 0, 0, 0);
+     color:white;
+     transform: translateY(-29rem);
+ }
+
+
+.contact-information 
+{
+    padding-top:10rem;
+    background-color: green;
+    color: black;
+}
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+.img{
+max-width: 100%;
+display: inline-block;
+}
+@media (min-width:420px)
+{img{max-width: 48%;}}
+
+@media (min-width:760px){img{max-width: 24%;}}
+
+
+
+

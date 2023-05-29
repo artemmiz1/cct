@@ -1,0 +1,230 @@
+body
+{
+    background-image: linear-gradient( rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.5) ), url('images/217654-cloud-landscape-nature-and-ambient-hd.jpg');
+    background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+background-position: top;
+}
+
+/* властивості елементів навігаційного меню */
+
+.container{
+    display:grid;
+    grid-template-columns: 1fr;
+    
+    background-image:  linear-gradient(  rgba(0,0,0, 0) 0%,rgba(0,0,0, 1) 100%), url(images/nav_background.jpg);
+    background-size: cover;
+    background-attachment: scroll;
+
+}
+
+.nav-bar 
+{
+    display: flex;
+flex-grow: 1;
+justify-content: space-between;
+padding: 38px;
+/*transform: translateY(-70%);*/
+transition: 0.5s;
+}
+
+.left-side
+{
+    display: flex;
+    
+}
+
+
+.nav-bar >.left-side > div
+{
+    margin-right: 20px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+    color:blue
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid rgb(219, 205, 205);
+}
+
+.nav-link-wrapper a:hover {
+    color:  rgb(219, 205, 205);
+}
+
+.brand {
+    font-size: 2rem;
+    color: wheat;
+    margin-right:3rem;
+}
+
+.container :hover .fa
+{
+    
+    transform: translateY(0%);
+    
+}
+
+.logo1 :hover
+{
+    border: 1px solid rgb(255, 0, 0);
+}
+
+.logo2 :hover
+{
+    border: 1px solid rgb(136, 255, 0);
+}
+
+.logo3 :hover
+{
+    border: 1px solid rgb(0, 17, 255);
+}
+
+.logo4 :hover
+{
+    border: 1px solid rgb(0, 255, 21);
+}
+
+.logos {
+    display: flex;
+    margin-left: 40rem;
+}
+
+.fa {
+    /*
+    text-align: center;
+    font-size: 5 rem;
+    width: 28px;
+    height: 28px;
+    float: left;
+    transform: translateY(-200%);
+    border: 1px solid rgba(204, 204, 204, 0);
+    border-radius: 34px;
+    margin: 0 10px 10px 0;
+    padding: 6px;
+    */
+    transition: 0.5s;
+    background: #3B5998;
+    color: white;
+
+
+    padding: 10px;
+    font-size: 30px;
+    
+    text-align: center;
+    text-decoration: none;
+    width: 18px;
+    height: 18px;
+    float: left;
+    transform: translateY(-220%);
+    border: 1px solid rgba(204, 204, 204, 0);
+    border-radius: 34px;
+    margin: 0 10px 10px 0;
+}
+
+
+.collapse {
+    flex-grow: 0.001;
+}
+
+/* властивості елементів головної частини сторінки */
+
+h1
+ {
+    
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: calc(1.3em * 2); /* calc () - це функція CSS, яка дає можливість розчитати значення своїх властивостей CSS під час їх визначення. */
+     text-align: center;
+     line-height: 2em;  /* Відносно розміру шрифту елемента (2em означає розмір поточного шрифту в 2 рази) */
+ }
+
+ h2
+ {
+    font-family: 'Oswald', sans-serif;
+    font-size: 5vmin;
+    line-height: 2vmin;
+    /* Відносно 1% меншого розміру області перегляду */
+ }
+
+ .main
+ {
+     
+    text-align: center;
+    margin-top: 16vh;
+    /* Відступ відносно 1% висоти області перегляду */
+ }
+
+ .img
+ {
+    float:right; /* Вирівнювання по лівому краю */
+    margin: 7px 0 7px 7px; /* Отступи навколо зображення залежать від кількості пікселів */
+ }
+
+ .biography 
+ {
+    font-family: 'Playfair Display', serif;
+     text-align: start;
+     font-size: clamp(1rem, 2.5vw, 1rem);  /* Розмір шрифту цього тексту залежить від базового шрифту сторінки та розміру області перегляду. */
+    
+ }
+ .center{
+  border: 5px;
+  text-align: left;
+  color: black;
+  font-size: large;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 20%;
+  margin-right: 20%;
+  
+}
+a:link {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  img{
+    max-width: 100%;
+    display: inline-block;
+    }
+    @media (min-width:420px)
+    {img{max-width: 100%;}}
+    
+    @media (min-width:760px)
+    {img{max-width: 100%;}}
+    .center-img {
+        display: block;
+        margin: 0 auto;
+      }
+      table, th, td {
+        border: 1px solid;
+      }
