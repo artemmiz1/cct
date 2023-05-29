@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title> Cloud Computing Tech</title>
+        <link rel = "stylesheet" href = "styles.css" >
+    </head>
+
+
+    <body>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <div class = "container">
+        
+            <div class="nav-bar">
+                <div class="left-side">
+                    <div class="nav-link-wrapper">
+<a style="color: blue;"  href = "test.html"> Головна </a>
+                  </div>
+                   <div class="nav-link-wrapper">
+<a style="color: blue;" href = "cloudtech.html"> Що таке ХО? </a>
+                    </div>
+                    <div class="nav-link-wrapper">
+<a style="color: blue;" href = "cloud_advantage.html"> Переваги ХО </a>
+                    </div>
+                    <div class="nav-link-wrapper">
+<a style="color: blue;" href = "jerela.html"> Джерела </a>
+                                          </div>
+                   
+
+                   
+
+                   <div class= "logos">
+                    <div class = "logo1">
+                   <a href="youtube.com" class="fa fa-facebook"></a>
+                </div>
+                <div class = "logo2">
+                   <a href="youtube.com" class="fa fa-twitter"></a>
+                </div>
+                <div class = "logo3">
+                    <a href="youtube.com" class="fa fa-instagram"></a>
+                 </div>
+                 <div class = "logo4">
+                    <a href="youtube.com" class="fa fa-google"></a>
+                 </div>
+
+                </div>
+
+                </div>
+
+               
+                <div class="right-side">
+                    <div class="brand">
+                                        <div> CCT </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+
+           
+
+         </div>
+         
+         <aside id="aside1">
+             
+        <div  class = "main-menu">
+            <div class = "menu-label">
+        <p style="color: blue;"> Ресурси: </p>
+            </div>
+            <div class = "menu-options">
+
+              <div class="btn1">
+                <p><a href="vlabs.html">Віртуальні лабораторії</a></p>
+              </div>
+        
+              <p>  </p>
+              <div class = "btn2">
+      <p><a href="managsrc.html">Інструменти керування</a></p>
+      </div>
+
+<p>  </p>
+<div class = "btn3">
+      <p style="color: black;"><a href="learnplat.html">Навчальні платформи</a></p>
+      </div>
+<p></p>
+<div class="btn3">
+         <p><a href="codingenv.html">Середовища кодування</a></p>
+
+</div>
+<p> </p>
+<div class="btn3">
+  <p><a href="filescache.html">Служби для зберігання файлів</a></p>
+</div>
+
+
+            </div>
+        </div>
+         </aside>
+
+        <div class = "main">
+          <div<p style="text-align: center; font-size: larger; color: black;">ХМАРНІ ОБЧИСЛЕННЯ</p>
+          <p></p>
+         <p style="text-align: left; margin-right: 1cm; font-family: Verdana, Geneva, Tahoma, sans-serif;">Хмарні обчислення - це модель обчислень, яка базується на використанні віддалених серверів, що надають обчислювальні ресурси та послуги через Інтернет. У цій моделі користувачі можуть отримати доступ до потужних обчислювальних ресурсів, зберігати дані та виконувати різноманітні завдання, не володіючи власним апаратним забезпеченням чи програмними рішеннями.</p>
+         <iframe style="width:600px; height: 400px;" src="https://www.youtube.com/embed/A4UFeHzX5ko" frameborder="0" allowfullscreen></iframe><p><a href="https://www.youtube.com/embed/A4UFeHzX5ko"></a></p>
+        <p></p>
+        <p style="text-align: center;">НОВИНИ</p>
+        <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;" >Щоб дізнатися більше новин про хмарні технології переходьте за посиланнями на сайти <a href="https://techcrunch.com/cloud-computing/">TechCrund</a>, <a href="https://www.cloudcomputing-news.net/">CloudTech</a>, <a href="https://cloudwars.co/">CloudWars</a>  </p>
+        </div>
+        
+
+      <!-- <div class = "contact-information">
+Контактная информация 
+          </div>>
+   
+        <style>
+            .sticky {
+              position: fixed;
+              top: 0px;  /* если ноль заменить на число (и в скрипте тоже), то блок будет прилипать до того, как верхний край окна браузера дойдёт до верхнего края элемента. Может быть отрицательным числом. Применим, например, при фиксированном сверху меню */
+              z-index: 101;
+              
+            }
+            </style>
+            
+            <script>
+            (function(){  // анонимная функция (function(){ })(), чтобы переменные "a" и "b" не стали глобальными
+            var a = document.querySelector('#aside1'), b = null;  // селектор блока, который нужно закрепить
+            window.addEventListener('scroll', Ascroll, false);
+            document.body.addEventListener('scroll', Ascroll, false);  // если у html и body высота равна 100%
+            function Ascroll() {
+              if (b == null) {  // добавить потомка-обёртку, чтобы убрать зависимость с соседями
+                var Sa = getComputedStyle(a, ''), s = '';
+                for (var i = 0; i < Sa.length; i++) {  // перечислить стили CSS, которые нужно скопировать с родителя
+                  if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+                    s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+                  }
+                }
+                b = document.createElement('div');  // создать потомка
+                b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+                a.insertBefore(b, a.firstChild);  // поместить потомка в цепляющийся блок первым
+                var l = a.childNodes.length;
+                for (var i = 1; i < l; i++) {  // переместить во вновь созданного потомка всех остальных потомков (итого: создан потомок-обёртка, внутри которого по прежнему работают скрипты)
+                  b.appendChild(a.childNodes[1]);
+                }
+                a.style.height = b.getBoundingClientRect().height + 'px';  // если под скользящим элементом есть другие блоки, можно своё значение
+                a.style.padding = '0';
+                a.style.border = '0';  // если элементу присвоен padding или border
+              }
+              if (a.getBoundingClientRect().top <= 0) { // elem.getBoundingClientRect() возвращает в px координаты элемента относительно верхнего левого угла области просмотра окна браузера
+                b.className = 'sticky';
+              } else {
+                b.className = '';
+              }
+              window.addEventListener('resize', function() {
+                a.children[0].style.width = getComputedStyle(a, '').width
+              }, false);  // если изменить размер окна браузера, измениться ширина элемента
+            }
+            })()
+            </script>  -->
+
+    </body>
+</html>
